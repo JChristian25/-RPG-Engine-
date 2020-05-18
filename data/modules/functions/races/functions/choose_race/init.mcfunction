@@ -1,0 +1,4 @@
+scoreboard players set @s hasRace 0
+tag @s add hasRace
+tellraw @a {"text":"Please Choose a Race from the book.","bold":"true","color":"green"}
+give @s written_book{pages:['["",{"text":"[Races]","bold":true,"color":"gray"},{"text":"\\n\\n- Choose: ","color":"reset"},{"text":"[Human]","bold":true,"color":"red","clickEvent":{"action":"run_command","value":"/function modules:races/functions/choose_race/choose_race_human"},"hoverEvent":{"action":"show_text","value":"Choose the Human Race!"}},{"text":"\\n\\n- Choose: ","color":"reset"},{"text":"[Orc]","bold":true,"color":"dark_green","clickEvent":{"action":"run_command","value":"/function modules:races/functions/choose_race/choose_race_orc"},"hoverEvent":{"action":"show_text","value":"Choose the Orc Race!"}}]'],title:'[Choose Race]',author:'[Server]',display:{Lore:["Right-click to read book and click a corresponding race to join!"]}}

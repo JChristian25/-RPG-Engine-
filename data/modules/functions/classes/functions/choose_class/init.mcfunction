@@ -1,0 +1,4 @@
+scoreboard players set @s hasClass 0
+tag @s add hasClass
+tellraw @a {"text":"Please Choose a Class from the book.","bold":"true","color":"green"}
+give @s written_book{pages:['["",{"text":"[Races]","bold":true,"color":"gray"},{"text":"\\n\\n- Choose: ","color":"reset"},{"text":"[Mage]","bold":true,"color":"dark_blue","clickEvent":{"action":"run_command","value":"/function modules:classes/functions/choose_class/choose_class_mage"},"hoverEvent":{"action":"show_text","value":"Choose the Mage Class!"}},{"text":"\\n\\n- Choose: ","color":"reset"},{"text":"[Ranger]","bold":true,"color":"dark_red","clickEvent":{"action":"run_command","value":"/function modules:classes/functions/choose_class/choose_class_ranger"},"hoverEvent":{"action":"show_text","value":"Choose the Ranger Class!"}}]'],title:'[Choose Class]',author:'[Server]',display:{Lore:["Right-click to read book and click a corresponding class to join!"]}}
